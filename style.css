@@ -168,3 +168,58 @@ button {
 .photo {
   margin-top: 7px;
 }
+
+.blogHeaderImg {
+  width: 100vw;
+  padding-top: 30px;
+  position: relative;
+
+  @media (min-width: 500px) {
+    width: 100%;
+  }
+
+}
+.imgGray {
+  filter: brightness(50%);
+}
+
+.imgText {
+  all: none;
+  color: white;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: absolute;
+  top: 54%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95%;
+  text-align: center;
+}
+
+.heading {
+  width: 100%;
+  padding-top: 35px;
+}
+
+h2 {
+  all: none;
+  color: rgba(0, 0, 0, 0.80);
+  font-family: Roboto;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.someText {
+  padding-top: 12px;
+  color: rgba(0, 0, 0, 0.80);
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
