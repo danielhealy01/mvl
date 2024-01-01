@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Vite App</title>
+	</head>
+	<body>
+		<div class="container">
+			<nav>
+				<img src="./public/hamburger.svg" width="20px" height="20px" />
+				<img src="./public/moon.svg" width="21px" height="21px" />
+			</nav>
+			<header>
+				<img src="./public/Rectangle-30.webp" width="75" height="72" />
+				<span class="heading">BOOK NOW</span>
+			</header>
+			<!-- 
+        works but 50 limit
+        <form
+				action="https://formsubmit.co/e440e2df9bbbcca01fada335b33e1b5e"
+				method="POST"
+			> -->
+			<!-- <form
+				action="https://getform.io/f/237e7fba-f3e2-45b0-9f3f-b89631a6869b"
+				method="POST"
+			> -->
+			<!-- add hidden Honeypot input to prevent spams getformio-->
+			<!-- <input type="hidden" name="_gotcha" style="display: none !important" /> 
+        honey pot for getform io
+        -->
+			<form action="./formHandler.php" method="POST">
+				<input type="hidden" name="_subject" value="New submission!" />
+				<div class="formList">
+					<div class="selectContainer">
+						<select required name="eventType" id="idname">
+							<option value="" disabled selected class="selectOption"></option>
+							<!-- <option value="" disabled selected>Select your option</option> -->
+							<option>Wedding</option>
+							<option>Product Launch</option>
+							<option>Charity Ball</option>
+						</select>
+						<span class="selectOptionHeader">Event Type</span>
+					</div>
+					<div class="selectContainer">
+						<input name="guestNo" required type="number" />
+						<span class="selectOptionHeader">Number of Guests</span>
+					</div>
+					<div class="selectContainer">
+						<input name="date" required type="date" />
+						<span class="selectOptionHeader">Date</span>
+					</div>
+					<div class="selectContainer">
+						<input name="start" required type="time" />
+						<span class="selectOptionHeader">Start Time</span>
+					</div>
+					<div class="selectContainer">
+						<input name="finish" required type="time" />
+						<span class="selectOptionHeader">Finish Time</span>
+					</div>
+					<div class="selectContainer">
+						<input
+							name="email"
+							required
+							type="email"
+							placeholder="your@email"
+						/>
+						<span class="selectOptionHeader">Email</span>
+					</div>
+					<div class="checky">
+						<input required type="checkbox" name="emailable" value="true" />
+						<label>Please let me know by email. </label>
+					</div>
+					<button>Book Now</button>
+					<img class="photo" src="./public/Rectangle 6.png" alt="venue" />
+				</div>
+			</form>
+		</div>
+		<script type="module" src="/main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,12 @@
+es6-string-html added to enable syntax highlighting inside template strings.
+
+The vite getting started code puts markup iniside the main.js script
+Surely requires .js file to be dl'd first before can implement markup
+Does this slow down TTFB / contentful paint?
+
+Nice to have markup in js file like jsx
+
+Would modularizing diff components on page, multiple .js downloads === slower?
+
+php script not bundled, uploaded seperately. Forwards formdata to email acc.
+

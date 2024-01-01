@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  width: 390px;
+  height: 844px;
+  padding: 10px;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+nav {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  width: 75%;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: -15px;
+  margin-top: -10px;
+  margin-bottom: 15px;
+}
+
+.heading {
+  color: rgba(0, 0, 0, 0.80);
+  font-family: Ropa Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+form {
+  width: 270px;
+  height: auto;
+}
+
+.formList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  
+  padding: 5px 60px;
+  width: 100%;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 0px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+input {
+  padding: 5px 70px;
+  width: 100%;
+  border: 1px solid black;
+  background-color: white;
+}
+
+input[type=date] {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+  /* -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; */
+  -webkit-min-logical-width: 96%;
+}
+
+input[type=number] {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+input[type=time] {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+  /* -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; */
+  -webkit-min-logical-width: 96%;
+}
+
+input[type=email] {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.checky { 
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  margin-top: -13px;
+  margin-left: 30px;
+}
+
+input[type=checkbox] {
+  padding: 0px 0px;
+  width: auto;
+}
+
+input[type=date] {
+  padding-left: 90px;
+}
+
+input[type=time] {
+  padding-left: 125px;
+}
+
+input[type=email] {
+  padding-left: 125px;
+}
+
+button {
+  padding: 15px 40px;
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: 15px;
+}
+
+.selectContainer {
+  position: relative;
+  width: 100%;
+}
+
+.selectOptionHeader {
+  position: absolute;
+  top: -7px;
+  left: 15px;
+  background-color: white;
+  padding: 0 3px;
+  font-size: 12px;
+}
+
+.photo {
+  margin-top: 7px;
+}
